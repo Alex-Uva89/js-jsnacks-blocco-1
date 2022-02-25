@@ -42,6 +42,7 @@ const num10th = parseInt(prompt('Indicami 10° numero'));
 
 resultStamp.innerHTML=Math.floor(num10th + num1st + num2nd + num3th + num4th + num5th + num6th + num7th + num8th + num9th);*/
 
+/*
 let calcArray = [];
 
 for (let calc = 0; calc < 10; calc++){
@@ -56,3 +57,73 @@ for (let i = 0; i < calcArray.length; i++) {
 }
 
 resultStamp.innerHTML = summ;
+*/
+
+// Snack 4
+// In un array sono contenuti i nomi degli invitati alla festa del grande
+// Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
+// no alla festa.
+
+/*
+const InvitedArray = [ 'Gianni', 'Lady Gaga','Pinotto','Sergio','Calogero']
+
+let nameUser = prompt('Qual è il tuo nome?');
+
+let convalid = false;
+
+for (let controlList = 0; controlList < InvitedArray.length; controlList++) {
+    if (nameUser === InvitedArray[controlList]){
+        convalid = true;
+    } 
+}
+
+if (convalid) {
+    resultStamp.innerHTML= 'Benvenuto alla festa'
+} else {
+    resultStamp.innerHTML= 'Non pupi partecipare alla festa'
+}
+*/
+
+
+// Snack 5
+// Crea un array vuoto.
+// Chiedi per 6 volte all’utente di inserire un numero,
+// se è dispari inseriscilo nell’array.
+
+/*
+let calcArray = [];
+
+for (let calc = 0; calc < 6; calc++){
+    let numUser = parseInt(prompt('Indicami un numero'));
+    if (numUser % 2 == 1){
+        calcArray.push(numUser);
+    }
+}
+
+resultStamp.innerHTML= (calcArray);
+*/
+
+
+// Snack 6
+// Chiedi un numero di 4 cifre all’utente
+// e calcola la somma di tutte le cifre che compongono il numero.
+
+
+let numUser = parseInt(prompt('Indicami un numero di quattro cifre'));
+let numberArray = [];
+
+if (numUser.length > 4){
+    alert('Indica SOLO 4 cifre');
+    } else if (numUser.length < 4){
+    alert('Indica SOLO 4 cifre');
+    } else {
+        let summ = 0;
+        numberArray = [...numUser]
+        for (let calc = 0; calc < numberArray.length; calc++) {
+             summ += parselInt(numberArray[calc]);
+        }
+        resultStamp.innerHTML = summ;
+}
+
+    
+
