@@ -171,29 +171,40 @@ resultStamp.innerHTML = "la somma dei tuoi numeri è " + somma;
 */
 
 // SOLUZIONE CICLO while:
+/*
+let somma = 0;
 
-let somma = [];
-
-
-let numeroUser = parseFloat(prompt('Inserisci un numero'));
-while (numeroUser <= 5){
+while (somma < 5){
     numeroUser = parseInt(prompt('Inserisci un numero'));
     somma += numeroUser ;
 }
 
 resultStamp.innerHTML = 'il tuo risultato è ' + somma;
-
-
+*/
 
 
 /*
 Snack 2.2
 Inserisci un numero, se è pari stampa il numero,
 se è dispari stampa il numero successivo
+*/
 
+// inserisco un numero
+// definisco la condizione pari
+// è pari: stampa il numero pari
+// è dispari: stampa il numero pari successivo
+/*
+let numero = parseInt(prompt('inserisci un numero'));
 
+if (numero% 2 == 0) {
+    resultStamp.innerHTML = numero + ' è pari!';
+} else {
+    numero++
+    resultStamp.innerHTML = numero + ' è il numero pari successivo';
+}
+*/
 
-
+/*
 Snack 2.3
 Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 */
