@@ -208,3 +208,23 @@ if (numero% 2 == 0) {
 Snack 2.3
 Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 */
+
+// ho una lista di nomi creati da me
+
+// ho una lista di cognomi creati da me
+
+// ho una lista di invitati vuota
+// genero una lista di invitati selezionando nomi e cognomi dalle liste precedenti
+
+let listaNomi = [ 'Alessandro', 'Mauro', 'Gabriele', 'Henri', 'Chiara', 'Mirko', 'Paolo', 'Laura', 'Erika', 'Luigi'];
+let listaCognomi = ['Uva', 'Fragola', 'Albicocca', 'Pera', 'Mela', 'Banana', 'Pesca', 'Ciliegia', 'Soffritto'];
+
+let listaInvitati = [];
+while (listaInvitati <= 3 ) {
+    let nomiInvitati = Math.floor(Math.random()*listaNomi.length);
+    let cognomiInvitati = Math.floor(Math.random()*listaCognomi.length);
+    listaInvitati += cognomiInvitati , nomiInvitati;
+}
+
+resultStamp.innerHTML = 'La tua lista è composta da: ' + listaInvitati;
+
