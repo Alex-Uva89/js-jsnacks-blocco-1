@@ -157,6 +157,9 @@ Esegui questo programma in due versioni, con il for e con il while.
 
 // chiedo 5 volte un numero
 // mi serve la somma dei numeri inseriti
+/*
+SOLUZIONE CICLO FOR:
+
 
 let somma = 0;
 
@@ -164,7 +167,20 @@ for (let numero = 1; numero <= 5; numero++) {
     let numeroUser = parseInt(prompt('Inserici un numero'));
     somma += numeroUser; 
 }
-console.log(somma)
+resultStamp.innerHTML = "la somma dei tuoi numeri è " + somma;
+*/
+
+// SOLUZIONE CICLO while:
+
+let somma = [];
+
+
+let numeroUser = 0;
+while (numeroUser <= 5){
+    numeroUser = parseInt(prompt('Inserisci un numero'));
+    somma += numeroUser ;
+}
+
 
 
 
