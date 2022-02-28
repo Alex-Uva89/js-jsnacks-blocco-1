@@ -220,10 +220,10 @@ let listaNomi = [ 'Alessandro', 'Mauro', 'Gabriele', 'Henri', 'Chiara', 'Mirko',
 let listaCognomi = ['Uva', 'Fragola', 'Albicocca', 'Pera', 'Mela', 'Banana', 'Pesca', 'Ciliegia', 'Soffritto'];
 
 let listaInvitati = [];
-while (listaInvitati < 3 ) {
+while (listaInvitati.length < 3 ) {
     let nomiInvitati = listaNomi[Math.floor(Math.random()*listaNomi.length)];
     let cognomiInvitati = listaCognomi[Math.floor(Math.random()*listaCognomi.length)];
-    listaInvitati += cognomiInvitati + ' ' + nomiInvitati;
+    listaInvitati.push(cognomiInvitati+ ' '+ nomiInvitati);
 }
 
 resultStamp.innerHTML = 'La tua lista è composta da: ' + listaInvitati;
