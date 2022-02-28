@@ -175,11 +175,13 @@ resultStamp.innerHTML = "la somma dei tuoi numeri è " + somma;
 let somma = [];
 
 
-let numeroUser = 0;
+let numeroUser = parseFloat(prompt('Inserisci un numero'));
 while (numeroUser <= 5){
     numeroUser = parseInt(prompt('Inserisci un numero'));
     somma += numeroUser ;
 }
+
+resultStamp.innerHTML = 'il tuo risultato è ' + somma;
 
 
 
